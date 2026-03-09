@@ -200,7 +200,7 @@
             <p style="font-size: 1.1rem; color: var(--kira-text-light); margin-bottom: 40px;">Contáctanos directamente
                 por WhatsApp para atención personalizada.</p>
             <a href="javascript:void(0)"
-                onclick="openWhatsApp('General', 'Hola Kira! Tengo una consulta sobre sus productos/servicios.')"
+                onclick="openWhatsApp('General', 'Hola Joaquin! Tengo una consulta sobre sus productos/servicios.')"
                 class="btn btn-navy">Chat con Joaquin</a>
         </section>
 
@@ -215,9 +215,9 @@
             let mensaje = "";
 
             if (tipo === 'Gafa') {
-                mensaje = `¡Hola Kira! 👓 Me interesa comprar este modelo:\n\n*Producto:* ${detalle}\n*Precio:* $${precio.toLocaleString()}\n\n¿Tienen stock disponible?`;
+                mensaje = `¡Hola Joaquin! 👓 Me interesa comprar este modelo:\n\n*Producto:* ${detalle}\n*Precio:* $${precio.toLocaleString()}\n\n¿Tienen stock disponible?`;
             } else if (tipo === 'Evento') {
-                mensaje = `¡Hola Kira! 🎈 Me gustaría reservar el siguiente servicio para un evento:\n\n*Servicio:* ${detalle}\n*Precio por día:* $${precio.toLocaleString()}\n\n¿Podrían confirmarme disponibilidad de fechas?`;
+                mensaje = `¡Hola Joaquin! 🎈 Me gustaría reservar el siguiente servicio para un evento:\n\n*Servicio:* ${detalle}\n*Precio por día:* $${precio.toLocaleString()}\n\n¿Podrían confirmarme disponibilidad de fechas?`;
             } else {
                 mensaje = detalle; // Mensaje general
             }
