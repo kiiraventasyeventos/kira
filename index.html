@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kira | Anteojos de Sol & Eventos Infantiles</title>
+    <meta name="description"
+        content="Kira: Boutique de anteojos de sol de alta gama y alquiler de eventos infantiles. Estilo y diversión en un solo lugar.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific Landing Page Styles (Split Hero) */
+        .hero-split {
+            display: flex;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .hero-panel {
+            flex: 1;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            padding: 40px;
+            transition: var(--transition-smooth);
+            cursor: pointer;
+        }
+
+        /* Branding Bridge */
+        .brand-bridge {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            background: white;
+            padding: 20px;
+            border-radius: 50%;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+        }
+
+        .brand-bridge img {
+            width: 100px;
+            height: auto;
+        }
+
+        /* Sunglasses Side */
+        .panel-sunglasses {
+            background-color: var(--kira-gray-light);
+            color: var(--kira-navy);
+        }
+
+        .panel-sunglasses::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=1000') center/cover no-repeat;
+            opacity: 0.1;
+            transition: var(--transition-smooth);
+        }
+
+        .panel-sunglasses:hover::before {
+            opacity: 0.2;
+            transform: scale(1.05);
+        }
+
+        /* Events Side */
+        .panel-events {
+            background-color: var(--kira-navy);
+            color: var(--kira-white);
+        }
+
+        .panel-events::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1533777857417-3fa905021fce?auto=format&fit=crop&q=80&w=1000') center/cover no-repeat;
+            opacity: 0.2;
+            transition: var(--transition-smooth);
+        }
+
+        .panel-events:hover::before {
+            opacity: 0.4;
+            transform: scale(1.05);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-panel h2 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero-panel p {
+            font-size: 1.2rem;
+            margin-bottom: 35px;
+            max-width: 400px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-split {
+                flex-direction: column;
+            }
+
+            .hero-panel {
+                height: 50vh;
+            }
+
+            .brand-bridge {
+                display: none;
+            }
+
+            .hero-panel h2 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container nav-container">
+            <div class="logo-text">KIRA</div>
+            <nav class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#catalogo">Anteojos de Sol</a>
+                <a href="#reservas">Alquiler de Eventos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="inicio">
+        <!-- Hero Split -->
+        <section class="hero-split" style="padding: 0;">
+            <div class="brand-bridge">
+                <img src="logo_kira.png" alt="Kira Logo">
+            </div>
+            <section class="hero-panel panel-sunglasses">
+                <div class="hero-content">
+                    <h2>Kira Sunglasses</h2>
+                    <p>Colección exclusiva: $15,000 c/u</p>
+                    <a href="#catalogo" class="btn btn-navy">Ver Catálogo</a>
+                </div>
+            </section>
+            <section class="hero-panel panel-events">
+                <div class="hero-content">
+                    <h2>Kira Events</h2>
+                    <p>Alquiler Inflables & Camas: $50,000</p>
+                    <a href="#reservas" class="btn btn-yellow">Reservar Fecha</a>
+                </div>
+            </section>
+        </section>
+
+        <!-- Sunglasses Catalog -->
+        <section id="catalogo" class="container">
+            <h2 class="section-title">Nuestra Colección de Sol</h2>
+            <div id="sunglasses-grid" class="products-grid">
+                <!-- Se poblará con JS -->
+            </div>
+        </section>
+
+        <!-- Events Rentals -->
+        <section id="reservas" class="container"
+            style="background-color: var(--kira-gray-light); min-width: 100vw; margin-left: calc(-50vw + 50%);">
+            <div class="container">
+                <h2 class="section-title">Kira Events: Diversión Asegurada</h2>
+                <div id="events-grid" class="products-grid">
+                    <!-- Se poblará con JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="container"
+            style="text-align: center; border-top: 1px solid rgba(0,0,0,0.05); padding: 80px 20px;">
+            <h2 class="section-title">¿Tienes Dudas?</h2>
+            <p style="font-size: 1.1rem; color: var(--kira-text-light); margin-bottom: 40px;">Contáctanos directamente
+                por WhatsApp para atención personalizada.</p>
+            <a href="javascript:void(0)"
+                onclick="openWhatsApp('General', 'Hola Kira! Tengo una consulta sobre sus productos/servicios.')"
+                class="btn btn-navy">Chat con Joaquin</a>
+        </section>
+
+    </main>
+
+    <script src="productos.js"></script>
+    <script>
+        // CONFIGURACIÓN DE WHATSAPP
+        const WHATSAPP_NUMBER = '5493834949878'; // REEMPLAZA CON TU NÚMERO REAL
+
+        function openWhatsApp(tipo, detalle, precio) {
+            let mensaje = "";
+
+            if (tipo === 'Gafa') {
+                mensaje = `¡Hola Kira! 👓 Me interesa comprar este modelo:\n\n*Producto:* ${detalle}\n*Precio:* $${precio.toLocaleString()}\n\n¿Tienen stock disponible?`;
+            } else if (tipo === 'Evento') {
+                mensaje = `¡Hola Kira! 🎈 Me gustaría reservar el siguiente servicio para un evento:\n\n*Servicio:* ${detalle}\n*Precio por día:* $${precio.toLocaleString()}\n\n¿Podrían confirmarme disponibilidad de fechas?`;
+            } else {
+                mensaje = detalle; // Mensaje general
+            }
+
+            const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensaje)}`;
+            window.open(url, '_blank');
+        }
+
+        // Render Sunglasses
+        const sunglassesGrid = document.getElementById('sunglasses-grid');
+        KIRA_PRODUCTOS.gafas.forEach(item => {
+            const card = `
+                <div class="product-card">
+                    <img src="${item.imagen}" alt="${item.nombre}" class="product-image">
+                    <div class="product-info">
+                        <span class="product-category">${item.categoria}</span>
+                        <h3 class="product-name">${item.nombre}</h3>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span class="product-price">$${item.precio.toLocaleString()}</span>
+                            <button class="btn btn-navy" onclick="openWhatsApp('Gafa', '${item.nombre}', ${item.precio})" style="padding: 10px 20px; font-size: 0.8rem;">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            sunglassesGrid.innerHTML += card;
+        });
+
+        // Render Events
+        const eventsGrid = document.getElementById('events-grid');
+        KIRA_PRODUCTOS.eventos.forEach(item => {
+            const card = `
+                <div class="product-card rental-card">
+                    <img src="${item.imagen}" alt="${item.nombre}" class="product-image">
+                    <div class="product-info">
+                        <span class="product-category">${item.tipo}</span>
+                        <h3 class="product-name">${item.nombre}</h3>
+                        <p style="font-size: 0.9rem; color: var(--kira-text-light); margin-bottom: 20px;">${item.descripcion}</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <span style="font-size: 0.8rem; color: var(--kira-text-light);">Alquiler por día:</span>
+                                <span class="product-price">$${item.precioAlquiler.toLocaleString()}</span>
+                            </div>
+                            <button class="btn btn-yellow" onclick="openWhatsApp('Evento', '${item.nombre}', ${item.precioAlquiler})" style="padding: 10px 20px; font-size: 0.8rem;">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            eventsGrid.innerHTML += card;
+        });
+    </script>
+</body>
+
+</html>
