@@ -5,7 +5,7 @@ const KIRA_PRODUCTOS = {
             nombre: 'Kira Crystal Rose',
             descripcion: 'Diseño hexagonal sin bordes, lentes rosa cristal y patillas doradas de lujo.',
             precio: 15000,
-            imagenes: ['Gafas1_a.jpeg', 'Gafas1_b.jpeg', 'Gafas1_c.jpeg'],
+            imagenes: ['gafas1_a.jpeg', 'gafas1_b.jpeg', 'gafas1_c.jpeg'],
             categoria: 'Fashion'
         },
         {
@@ -151,7 +151,7 @@ const KIRA_PRODUCTOS = {
             nombre: 'Cama Elástica Profesional',
             descripcion: 'Cama elástica de alta seguridad con red de protección y escalera.',
             precioAlquiler: 60000,
-            imagen: 'WhatsApp Image 2026-03-08 at 02.08.38.jpeg',
+            imagen: 'WhatsApp Image 2026-03-06 at 02.08.38.jpeg',
             tipo: 'Cama Elástica'
         }
     ]

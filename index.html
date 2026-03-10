@@ -226,12 +226,27 @@
             window.open(url, '_blank');
         }
 
+        function changeImage(id, src) {
+            const img = document.querySelector(`#img-${id}`);
+            if (img) img.src = src;
+        }
+
         // Render Sunglasses
         const sunglassesGrid = document.getElementById('sunglasses-grid');
         KIRA_PRODUCTOS.gafas.forEach(item => {
             const card = `
                 <div class="product-card">
-                    <img src="${item.imagen}" alt="${item.nombre}" class="product-image">
+                    <div class="image-gallery">
+                        <img src="${item.imagenes[0]}" id="img-${item.id}" alt="${item.nombre}" class="product-image">
+                        <div class="thumbnails">
+                            ${item.imagenes.map(img => `
+                                <img src="${img}" 
+                                     onmouseover="changeImage('${item.id}', '${img}')" 
+                                     ontouchstart="changeImage('${item.id}', '${img}')" 
+                                     class="thumb">
+                            `).join('')}
+                        </div>
+                    </div>
                     <div class="product-info">
                         <span class="product-category">${item.categoria}</span>
                         <h3 class="product-name">${item.nombre}</h3>
