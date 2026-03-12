@@ -54,7 +54,7 @@ const KIRA_PRODUCTOS = {
             descripcion: 'Estilo urbano minimalista con cristales oscuros y marco ultraligero.',
             precio: 15000,
             imagenes: ['gafas7_a.jpeg', 'gafas7_b.jpeg', 'gafas7_c.jpeg'],
-            categoria: 'Essential'
+            categoria: 'Classic'
         },
         {
             id: 'g8',
@@ -62,7 +62,7 @@ const KIRA_PRODUCTOS = {
             descripcion: 'Lentes con tonalidades oceánicas y marco ligero para el uso diario.',
             precio: 12000,
             imagenes: ['gafas8_a.jpeg', 'gafas8_b.jpeg', 'gafas8_c.jpeg'],
-            categoria: 'Casual'
+            categoria: 'Essential'
         },
         {
             id: 'g9',
@@ -98,8 +98,8 @@ const KIRA_PRODUCTOS = {
         },
         {
             id: 'g13',
-            nombre: 'Kira Violet Sky',
-            descripcion: 'Lentes violetas degradados en un marco sutil y moderno.',
+            nombre: 'Kira Clear Sky',
+            descripcion: 'Lentes transparentes en un marco sutil y moderno.',
             precio: 12000,
             imagenes: ['gafas13_a.jpeg', 'gafas13_b.jpeg', 'gafas13_c.jpeg'],
             categoria: 'Special'
@@ -110,7 +110,7 @@ const KIRA_PRODUCTOS = {
             descripcion: 'Colores tierra que combinan con cualquier outfit casual.',
             precio: 12000,
             imagenes: ['gafas14_a.jpeg', 'gafas14_b.jpeg', 'gafas14_c.jpeg'],
-            categoria: 'Casual'
+            categoria: 'Sport'
         },
         {
             id: 'g15',
@@ -122,16 +122,16 @@ const KIRA_PRODUCTOS = {
         },
         {
             id: 'g16',
-            nombre: 'Kira Carbon Steel',
+            nombre: 'Kira Brown Steel',
             descripcion: 'Diseño robusto inspirado en materiales industriales.',
             precio: 12000,
             imagenes: ['gafas16_a.jpeg', 'gafas16_b.jpeg', 'gafas16_c.jpeg'],
-            categoria: 'Men'
+            categoria: 'Luxury'
         },
         {
             id: 'g17',
-            nombre: 'Kira Gold Leaf',
-            descripcion: 'Detalles dorados refinados en un diseño atemporal.',
+            nombre: 'Kira Grey Leaf',
+            descripcion: 'Detalles grey refinados en un diseño atemporal.',
             precio: 12000,
             imagenes: ['gafas17_a.jpeg', 'gafas17_b.jpeg', 'gafas17_c.jpeg'],
             categoria: 'Luxury'
@@ -148,8 +148,8 @@ const KIRA_PRODUCTOS = {
         },
         {
             id: 'e2',
-            nombre: 'Cama Elástica Profesional',
-            descripcion: 'Cama elástica de alta seguridad con red de protección y escalera.',
+            nombre: 'Cama Elástica',
+            descripcion: 'Cama elástica de alta seguridad con red de protección.',
             precioAlquiler: 60000,
             imagen: 'WhatsApp Image 2026-03-06 at 02.08.38.jpeg',
             tipo: 'Cama Elástica'
