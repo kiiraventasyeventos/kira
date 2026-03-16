@@ -159,7 +159,7 @@ const KIRA_PRODUCTOS = {
             nombre: 'Combo: Castillo + Cama Elástica',
             descripcion: '¡Súper Promo! Contratando ambos servicios obtenés un descuento especial. Incluye traslado, armado y desarmado.',
             precioAlquiler: 80000,
-            imagen: 'WhatsApp Image 2026-03-06 at 02.07.38.jpeg',
+            imagen: 'Castillo + Cama Elasitica promo2026-03-16.jpeg',
             tipo: 'PROMO'
         }
     ]
