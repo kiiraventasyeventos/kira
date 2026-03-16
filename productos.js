@@ -141,16 +141,16 @@ const KIRA_PRODUCTOS = {
         {
             id: 'e1',
             nombre: 'Castillo Inflable Tobogán Arcoíris',
-            descripcion: 'Castillo colorido con tobogán, ideal para cumpleaños y eventos infantiles.',
-            precioAlquiler: 60000,
+            descripcion: 'Castillo colorido con tobogán, ideal para cumpleaños y eventos infantiles. Incluye el traslado, armado y desarmado.',
+            precioAlquiler: 50000,
             imagen: 'WhatsApp Image 2026-03-06 at 02.07.38.jpeg',
             tipo: 'Inflable'
         },
         {
             id: 'e2',
             nombre: 'Cama Elástica',
-            descripcion: 'Cama elástica de alta seguridad con red de protección.',
-            precioAlquiler: 60000,
+            descripcion: 'Cama elástica de alta seguridad con red de protección. Incluye el traslado, armado y desarmado.',
+            precioAlquiler: 50000,
             imagen: 'WhatsApp Image 2026-03-06 at 02.08.38.jpeg',
             tipo: 'Cama Elástica'
         }
