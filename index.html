@@ -267,7 +267,7 @@
             if (tipo === 'Gafa') {
                 mensaje = `¡Hola Joaquin! 👓 Me interesa comprar este modelo:\n\n*Producto:* ${detalle}\n*Precio:* $${precio.toLocaleString()}\n\n¿Tienen stock disponible?`;
             } else if (tipo === 'Evento') {
-                mensaje = `¡Hola Joaquin! 🎈 Me gustaría reservar el siguiente servicio para un evento:\n\n*Servicio:* ${detalle}\n*Precio por día:* $${precio.toLocaleString()}`;
+                mensaje = `¡Hola Joaquin! 🎈 Me gustaría reservar el siguiente servicio para un evento:\n\n*Servicio:* ${detalle}\n*Precio por 3 horas:* $${precio.toLocaleString()}`;
             } else {
                 mensaje = detalle; // Mensaje general
             }
@@ -322,7 +322,7 @@
                         <p style="font-size: 0.9rem; color: var(--kira-text-light); margin-bottom: 20px;">${item.descripcion}</p>
                         <div style="display: flex; justify-content: space-between; align-items: center;">
                             <div>
-                                <span style="font-size: 0.8rem; color: var(--kira-text-light);">Alquiler por día:</span>
+                                <span style="font-size: 0.8rem; color: var(--kira-text-light);">Alquiler por 3 horas:</span>
                                 <span class="product-price">$${item.precioAlquiler.toLocaleString()}</span>
                             </div>
                             <button class="btn btn-yellow" onclick="openWhatsApp('Evento', '${item.nombre}', ${item.precioAlquiler})" style="padding: 10px 20px; font-size: 0.8rem;">Reservar</button>
